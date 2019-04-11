@@ -2,68 +2,32 @@
     margin: 0;
     padding: 0;
 }
-a{
-    text-decoration: none;
-}
-
 #main{
-    position: relative;
-
-    height: 800px;
-}
-#container{
-    position: absolute;
     z-index: 1;
-    width: 500%;
-    height: 800px;
-}
-#container img{
-    float:left;
-    width: 20%;
-    height:auto;
-}
- #btns{
     position: absolute;
-    right: -70px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-size: cover;
+    background-image: url("image/image1.jpg");
+    z-index: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition: all 500ms linear 0s;
+}
+#btns{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
     bottom: 20px;
-    width: 200px;
-    height: 10px;
-    z-index: 2;
-     display: inline-block;
-}
 
+}
 #btns span{
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 20px;
-    background: white;
-    color: olivedrab;
-    border-radius: 15px;
+    margin-left: 8px;
+    background: none;
+    font-size: 16px;
+    color: white;
 }
-span:hover{
+#btns span:hover{
     cursor: pointer;
-    background: forestgreen;
-    color: lightgray;
-}
-.arrow{
-    position: absolute;
-    top:35%;
-    bottom: 35%;
-    color: darkgreen;
-    padding: 0px 14px;
-    font-weight: lighter;
-    font-size: 50px;
-    z-index: 2;
-    visibility: hidden;
-}
-#arrowleft{
-    left: -5px;
-}
-#arrowright{
-    right: -5px;
-}
-.arrow:hover{
-    cursor: pointer;
-    color: forestgreen;
+
 }
